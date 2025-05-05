@@ -12,7 +12,7 @@ serve(async (_req) => {
       },
     });
     return new Response("Fake visit sent successfully!", { status: 200 });
-  } catch {
+  } catch (err) {
     return new Response("Failed to send visit.", { status: 500 });
   }
-});￼Enter
+});
